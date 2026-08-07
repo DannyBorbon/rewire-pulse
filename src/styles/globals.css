@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("./fonts/static/PlusJakartaSans-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", Courier, monospace;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  height: 200vh;
+}
+
+:root {
+  /*   Backgrounds  */
+  --bg-primary: #090b12;
+  --bg-secondary: #0f121e;
+  --bg-card: #1a2235;
+
+  /*   Typography  */
+  --text-primary: #f2f4f6;
+  --text-secondary: #94a3b8;
+
+  /*   Brand / Neural Energy  */
+  --accent-primary: #00d4ff;
+  --accent-secondary: #3b82f6;
+
+  /*   Borders  */
+  --border-default: rgba(0, 212, 255, 0.15);
+  --border-active: rgba(0, 212, 255, 0.45);
+
+  /*   States   */
+  --success: #22c55e;
+  --error: #ef4444;
+
+  /*   Effects  */
+  --glow-primary: rgba(0, 212, 255, 0.25);
+  --glow-strong: rgba(0, 212, 255, 0.45);
+}
