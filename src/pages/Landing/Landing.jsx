@@ -1,11 +1,12 @@
 import Navbar from "../../components/Navbar/Navbar";
+import Hero from "../../components/Hero/Hero";
 
 function Landing() {
   return (
     <>
       <Navbar />
       <main>
-        <h2>Landing page</h2>
+        <Hero />
       </main>
     </>
   );
