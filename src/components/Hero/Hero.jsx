@@ -1,5 +1,5 @@
 import "../Hero/Hero.css";
-import neuralImg from "../../assets/images/neural-connections.png";
+import brainImg from "../../assets/images/brain-hero.svg";
 import nodeImg from "../../assets/images/node-hero.svg";
 
 function Hero() {
@@ -40,7 +40,7 @@ function Hero() {
           <div className="hero__image-container">
             <img
               className="hero__image"
-              src={neuralImg}
+              src={brainImg}
               alt="Neuronal Connections"
             />
           </div>
