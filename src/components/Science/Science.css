@@ -1,6 +1,6 @@
 .science {
   padding-inline: 1.5rem;
-  margin-top: 40px;
+  margin-top: 180px;
   margin-bottom: 120px;
 }
 
@@ -26,7 +26,7 @@
 
 .science__text {
   color: var(--text-secondary);
-  font-size: medium;
+  font-size: large;
   line-height: 1.5;
 }
 
@@ -66,14 +66,14 @@
 /* Science neurons image */
 
 .science-visual {
-  margin-top: 40px;
+  margin-top: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .science__image-container {
-  width: min(90%, 620px);
+  width: min(100%, 620px);
   aspect-ratio: 1 / 1;
   border: 20px solid var(--bg-card);
   background-color: var(--bg-card);
@@ -103,22 +103,24 @@
 }
 
 @media (min-width: 768px) {
-  .science {
-    display: flex;
-    flex-direction: row;
+  .science__wrapper {
+    max-width: 600px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 1024px) {
-  .science {
-    display: flex;
-    flex-direction: row;
-    padding-inline: 5rem;
-    max-width: 1200px;
-    margin: auto;
-  }
-
   .science-stat {
     gap: 4rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .science__wrapper {
+    display: flex;
+    max-width: 1200px;
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 2rem;
   }
 }
