@@ -15,7 +15,20 @@ body {
   font-family: "Plus Jakarta Sans", Courier, monospace;
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  height: 200vh;
+}
+
+.section__subtitle {
+  font-size: x-small;
+  text-transform: uppercase;
+  color: var(--accent-primary);
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.section__title {
+  font-size: var(--title-size);
+  font-weight: 900;
+  line-height: 1.1;
 }
 
 :root {
@@ -27,6 +40,9 @@ body {
   /*   Typography  */
   --text-primary: #f2f4f6;
   --text-secondary: #94a3b8;
+
+  /*   Text sizes  */
+  --title-size: clamp(1.8rem, 3vw, 4rem);
 
   /*   Brand / Neural Energy  */
   --accent-primary: #00d4ff;
