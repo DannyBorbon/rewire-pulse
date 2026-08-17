@@ -22,7 +22,7 @@ body {
   text-transform: uppercase;
   color: var(--accent-primary);
   font-weight: 700;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.2rem;
 }
 
 .section__title {
@@ -42,7 +42,7 @@ body {
   --text-secondary: #94a3b8;
 
   /*   Text sizes  */
-  --title-size: clamp(1.8rem, 3vw, 4rem);
+  --title-size: clamp(2.2rem, 3vw, 4rem);
 
   /*   Brand / Neural Energy  */
   --accent-primary: #00d4ff;

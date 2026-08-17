@@ -1,0 +1,141 @@
+.testimonial {
+  padding-top: 120px;
+  padding-bottom: 128px;
+  position: relative;
+}
+
+.testimonial__background {
+  position: absolute;
+  opacity: 0.1;
+  inset: 0;
+  pointer-events: none;
+}
+
+.testimonial__background img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.testimonial__wrapper {
+  position: relative;
+  padding-inline: 1.5rem;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.testimonial__content-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.testimonial__quote {
+  color: var(--text-secondary);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.testimonial__profile {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  line-height: 1.6;
+}
+
+.testimonial__picture {
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--border-active);
+  border-radius: 50%;
+}
+
+.testimonial__picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.testimonial__name {
+  font-weight: 600;
+  font-size: large;
+}
+
+.testimonial__data {
+  font-size: x-small;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.testimonial__consolidated {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial__consolidated-image-mobile {
+  width: min(90%, 420px);
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid var(--border-active);
+}
+
+.testimonial__consolidated-image-mobile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial__consolidated-image-desktop {
+  display: none;
+}
+
+.testimonial__line {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 1px;
+  height: 6rem;
+
+  background: linear-gradient(to bottom, rgb(0 212 255 / 0.2), transparent);
+}
+
+@media (min-width: 768px) {
+  .testimonial__wrapper {
+    max-width: 720px;
+    margin: auto;
+  }
+
+  .testimonial__consolidated-image-mobile {
+    display: none;
+  }
+
+  .testimonial__consolidated-image-desktop {
+    width: min(90%, 620px);
+    border-radius: 30px;
+    overflow: hidden;
+    display: block;
+    border: 1px solid var(--border-active);
+    position: relative;
+  }
+
+  .testimonial__consolidated-image-desktop img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 1440px) {
+  .testimonial__wrapper {
+    max-width: 1280px;
+    display: flex;
+
+    flex-direction: row;
+  }
+}
