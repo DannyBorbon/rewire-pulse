@@ -153,6 +153,7 @@
   align-items: center;
   margin-top: 50px;
   margin-bottom: 120px;
+  pointer-events: none;
 }
 
 .hero__image-container {
