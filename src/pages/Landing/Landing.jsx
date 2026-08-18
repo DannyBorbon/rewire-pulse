@@ -3,6 +3,7 @@ import Hero from "../../components/Hero/Hero";
 import Science from "../../components/Science/Science";
 import Pathway from "../../components/Pathway/Pathway";
 import Testimonial from "../../components/Testimonial/Testimonial";
+import Prices from "../../components/Prices/Prices";
 
 function Landing() {
   return (
@@ -13,6 +14,7 @@ function Landing() {
         <Science />
         <Pathway />
         <Testimonial />
+        <Prices />
       </main>
     </>
   );
