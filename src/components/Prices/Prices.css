@@ -19,7 +19,7 @@
 
 .prices__cards {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 592px);
   gap: 2rem;
   justify-content: center;
 }
