@@ -4,6 +4,7 @@ import Science from "../../components/Science/Science";
 import Pathway from "../../components/Pathway/Pathway";
 import Testimonial from "../../components/Testimonial/Testimonial";
 import Prices from "../../components/Prices/Prices";
+import Footer from "../../components/Footer/Footer";
 
 function Landing() {
   return (
@@ -16,6 +17,7 @@ function Landing() {
         <Testimonial />
         <Prices />
       </main>
+      <Footer />
     </>
   );
 }
