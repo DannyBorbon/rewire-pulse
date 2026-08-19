@@ -4,7 +4,7 @@ import nodeImg from "../../assets/images/node-hero.svg";
 
 function Hero() {
   return (
-    <section className="hero">
+    <section id="hero" className="hero">
       <div className="hero__grid"></div>
 
       <div className="hero__content">

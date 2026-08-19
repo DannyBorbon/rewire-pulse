@@ -3,7 +3,7 @@ import neuronImg from "../../assets/images/science/neuron-img.png";
 
 function Science() {
   return (
-    <section className="science">
+    <section id="science" className="science">
       <div className="science__wrapper">
         <div className="science__content">
           <span className="section__subtitle">The Science</span>

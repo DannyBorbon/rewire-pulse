@@ -3,7 +3,7 @@ import pricesImg from "../../assets/images/prices/prices-svg.svg";
 
 function Prices() {
   return (
-    <section className="prices">
+    <section id="prices" className="prices">
       <div className="prices__header">
         <span className="section__subtitle">Choose Your Path</span>
         <h2 className="section__title">Invest in your evolution</h2>

@@ -14,7 +14,7 @@ import nodeImg from "../../assets/images/node-hero.svg";
 
 function Pathway() {
   return (
-    <section className="pathway">
+    <section id="pathway" className="pathway">
       <div className="pathway__content">
         <span className="section__subtitle">The Mechanism</span>
         <h2 className="section__title pathway__title">

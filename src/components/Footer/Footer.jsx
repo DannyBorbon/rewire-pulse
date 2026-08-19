@@ -6,7 +6,7 @@ import githubImg from "../../assets/images/footer/github-svg.svg";
 
 function Footer() {
   return (
-    <section className="footer">
+    <section id="footer" className="footer">
       <div className="footer__container">
         <div className="footer__grid">
           <div className="footer__header">
