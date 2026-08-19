@@ -48,6 +48,15 @@ function Navbar() {
             <a
               onClick={() => setMenuOpen(false)}
               className="navbar__link"
+              href="#testimonial"
+            >
+              Testimonial
+            </a>
+          </li>
+          <li>
+            <a
+              onClick={() => setMenuOpen(false)}
+              className="navbar__link"
               href="#prices"
             >
               Pricing
