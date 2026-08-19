@@ -6,7 +6,7 @@ import testimonialBackground from "../../assets/images/testimonial/testimonial-b
 
 function Testimonial() {
   return (
-    <section className="testimonial">
+    <section id="testimonial" className="testimonial">
       <div className="testimonial__background">
         <img src={testimonialBackground} alt="" />
       </div>
