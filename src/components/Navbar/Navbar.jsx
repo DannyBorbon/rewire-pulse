@@ -39,7 +39,7 @@ function Navbar() {
             <a
               onClick={() => setMenuOpen(false)}
               className="navbar__link"
-              href="#howitworks"
+              href="#pathway"
             >
               How It Works
             </a>
@@ -48,7 +48,7 @@ function Navbar() {
             <a
               onClick={() => setMenuOpen(false)}
               className="navbar__link"
-              href="#pricing"
+              href="#prices"
             >
               Pricing
             </a>
