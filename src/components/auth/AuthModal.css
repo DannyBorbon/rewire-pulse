@@ -52,6 +52,53 @@
   margin-bottom: 2rem;
 }
 
+.auth__separator {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.auth__separator-line {
+  flex: 1;
+  border-top: 1px solid var(--border-default);
+}
+
+.auth__separator-text {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+.signin__google-btn {
+  border-radius: 999px;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: white;
+  background-color: var(--bg-card);
+  cursor: pointer;
+  padding: 1rem 0;
+  margin: auto;
+  height: 48px;
+  width: 100%;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.signin__google-btn:hover {
+  background-color: #192b3f;
+}
+
+.auth__container-line {
+  border-top-width: 1px;
+  border-color: var(--border-default);
+  width: 100%;
+}
+
 .auth__footer button {
   background: none;
   text-decoration: none;
@@ -67,7 +114,8 @@
   text-decoration-line: underline;
 }
 
-.auth__form-area {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+@media (min-width: 321px) {
+  .signin__google-btn {
+    max-width: 210px;
+  }
 }
