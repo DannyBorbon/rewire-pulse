@@ -8,8 +8,11 @@ function AuthModal({ mode, onModeChange }) {
   const isLogin = mode === "login";
   return (
     <section className="auth">
-      <div className="auth__modal-overlay">
-        <div className="auth__modal-container">
+      <div className="auth__modal-overlay" onClick={() => onModeChange(null)}>
+        <div
+          className="auth__modal-container"
+          onClick={(event) => event.stopPropagation()}
+        >
           <button
             className="auth__modal-close"
             type="button"
@@ -18,10 +21,6 @@ function AuthModal({ mode, onModeChange }) {
           >
             ×
           </button>
-          <div className="auth__modal-subtitle">
-            {isLogin ? "Login" : "Register"}
-          </div>
-
           <div className="auth__modal-title">
             {isLogin ? "Welcome back" : "Register"}
           </div>
