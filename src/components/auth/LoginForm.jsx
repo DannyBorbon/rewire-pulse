@@ -1,33 +1,33 @@
-import "./LoginForm.css";
+import "./AuthForm.css";
 
 function LoginForm() {
   return (
-    <form className="loginform" action="">
-      <div className="loginform__field">
-        <label className="loginform__label" type="email">
+    <form className="authform" action="">
+      <div className="authform__field">
+        <label className="authform__label" htmlFor="email">
           Email
         </label>
         <input
-          className="loginform__input"
+          className="authform__input"
           id="email"
           type="email"
           placeholder="name@email.com"
         />
-        <div className="loginform__field-label">
-          <label className="loginform__label" type="password">
+        <div className="authform__field-label">
+          <label className="authform__label" htmlFor="password">
             Password
           </label>
-          <a className="loginform__forgot" href="">
+          <a className="authform__forgot" href="">
             Forgot?
           </a>
         </div>
         <input
-          className="loginform__input"
-          id="email"
-          type="email"
+          className="authform__input"
+          id="password"
+          type="password"
           placeholder="••••••••"
         />
-        <button className="loginform__submit" type="submit">
+        <button className="authform__submit" type="submit">
           LOG IN
         </button>
       </div>

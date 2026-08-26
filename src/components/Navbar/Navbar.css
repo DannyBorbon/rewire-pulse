@@ -197,13 +197,15 @@
   font-weight: 600;
   line-height: 3;
   background-color: #00d4ff;
-  padding: 10px 20px;
+  padding: 0px 24px;
   border-radius: 999px;
   letter-spacing: 0.09rem;
   border-top: 1px solid var(--border-default);
   border-bottom: 1px solid var(--border-default);
   box-shadow: 0 0 10px rgba(0, 212, 255, 0.25);
   transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
 }
 
 .navbar__cta-button:hover {

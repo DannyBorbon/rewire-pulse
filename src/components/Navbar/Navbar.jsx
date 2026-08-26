@@ -2,7 +2,7 @@ import "./Navbar.css";
 import logo from "../../assets/images/logo-navbar.svg";
 import { useState } from "react";
 
-function Navbar() {
+function Navbar({ onLogin, onRegister }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -68,15 +68,21 @@ function Navbar() {
             </a>
           </li>
           <li className="navbar__menu-cta">
-            <a href="/register" className="navbar__cta-button">
+            <button
+              className="navbar__cta-button"
+              onClick={() => {
+                onLogin();
+                setMenuOpen(false);
+              }}
+            >
               START REWIRING
-            </a>
+            </button>
           </li>
         </ul>
         <div className="navbar__cta">
-          <a href="/register" className="navbar__cta-button">
+          <button className="navbar__cta-button" onClick={onLogin}>
             START REWIRING
-          </a>
+          </button>
         </div>
       </div>
     </nav>

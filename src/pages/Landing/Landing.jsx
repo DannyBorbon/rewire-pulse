@@ -8,7 +8,6 @@ import Testimonial from "../../components/Testimonial/Testimonial";
 import Prices from "../../components/Prices/Prices";
 import Footer from "../../components/Footer/Footer";
 import AuthModal from "../../components/auth/AuthModal";
-import LoginForm from "../../components/auth/LoginForm";
 
 function Landing() {
   const [authMode, setAuthMode] = useState(null);
@@ -26,9 +25,7 @@ function Landing() {
         <Prices />
       </main>
       <Footer />
-      <AuthModal>
-        <LoginForm />
-      </AuthModal>
+      {authMode && <AuthModal mode={authMode} onModeChange={setAuthMode} />}
     </>
   );
 }
