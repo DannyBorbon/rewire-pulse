@@ -63,15 +63,16 @@ function Navbar({ onLogin, onRegister }) {
             </a>
           </li>
           <li>
-            <a className="navbar__link" href="/app">
-              Portal
-            </a>
+            <button type="button" className="navbar__link" onClick={onLogin}>
+              Login
+            </button>
           </li>
           <li className="navbar__menu-cta">
             <button
-              className="navbar__cta-button"
+              type="button"
+              id="navbar__cta-button"
               onClick={() => {
-                onLogin();
+                onRegister();
                 setMenuOpen(false);
               }}
             >
@@ -80,7 +81,11 @@ function Navbar({ onLogin, onRegister }) {
           </li>
         </ul>
         <div className="navbar__cta">
-          <button className="navbar__cta-button" onClick={onLogin}>
+          <button
+            type="button"
+            className="navbar__cta-button"
+            onClick={onRegister}
+          >
             START REWIRING
           </button>
         </div>

@@ -156,6 +156,13 @@
   font-size: 13px;
 }
 
+.navbar__menu button {
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 .navbar__link {
   text-decoration: none;
   transition: color 0.25s ease;
@@ -190,6 +197,7 @@
   display: none;
 }
 
+#navbar__cta-button,
 .navbar__cta-button {
   text-decoration: none;
   color: #08131d;

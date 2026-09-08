@@ -28,11 +28,11 @@ function Hero() {
           thinking patterns and, ultimately, your habits.
         </p>
         <div className="hero__actions">
-          <a className="hero__button hero__button--primary" href="/signup">
+          <button className="hero__button hero__button--primary" href="/signup">
             Start Rewiring
-          </a>
+          </button>
 
-          <a className="hero__button hero__button--secondary" href="/science">
+          <a className="hero__button hero__button--secondary" href="#science">
             Explore Science
           </a>
         </div>
